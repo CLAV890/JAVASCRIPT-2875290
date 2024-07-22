@@ -1,0 +1,93 @@
+body{
+    background-color: black;
+}
+
+.container{ 
+    background-color:white;
+    height: 400px;
+    width: 700px;
+    margin:200px auto;
+    border-radius: 20px;
+    position: relative;
+    overflow: hidden;
+
+}
+.uno{ width: 200px;
+  left: 150px;
+  position: absolute;
+  right: 100px;
+  animation: nube 5s linear;
+
+
+
+}
+.dos{ width: 150px;
+  animation: nube 5s linear;
+  top: 50px;
+  z-index: 5;
+  position: absolute;
+  left: 400px;
+
+
+}
+.tres{ width: 100px;
+  bottom: 20px;
+  left: 400px;
+  animation: nube 5s linear ;
+  top: 140px;
+  z-index: 7;
+  position: absolute;
+}
+.cuatro{
+   position: absolute;
+  left: 450px;
+  animation: nube 55s linear;
+  z-index: 8;
+  width: 200px;
+  right: 800px;
+}
+.montaña{ width: 100%;
+  bottom: -7px;
+  left: 0;
+  z-index: 2;
+  position: absolute;
+
+}
+
+.sol{
+    height: 100px;
+    width: 100px;
+    bottom: 100px;
+    position: absolute;
+    border-radius: 200px;
+    right: 200px;
+    z-index: 1;
+
+
+     background: rgb(255, 51, 0);
+     animation:move 0.5s infinite 0.5s,
+     rotate 5s infinite 5s;
+     animation-composition: replace;
+    }
+      
+      @keyframes move {
+        to {
+          bottom: 100px;
+          background: #ff0101;
+        }
+      }
+      
+      @keyframes nube{
+        to {
+         rotate: infinit;
+         left: 200px;
+        }
+      }
+      
+      @keyframes rotate {
+        to {
+          bottom: 300px;
+          background: yellow;
+        }
+      }
+

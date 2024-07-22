@@ -1,0 +1,123 @@
+
+#mapa{
+    text-align: center;
+    height: 100%;
+    width: 100%;
+    
+
+    text-align: center;
+}
+#mapaa{
+    text-align: center;
+    height: 100%;
+    width: 100%;
+    text-align: center;
+    z-index: 0;
+
+    position: absolute;
+}
+
+#play{ 
+    background-color: rgb(255, 1, 1);
+    font-family: designer;
+    align-items: center;
+    color: chartreuse;
+    width: 200px;
+    height: 50px;
+    position: ;
+}
+
+#mostro{
+   background-color: transparent;
+
+    height: 200px;
+    width: 200px;
+    bottom: 100px;
+    position: absolute;
+    right: 10px;
+    z-index: 1;
+    top: 625px;
+
+    
+
+}
+#estrella{
+   background-color: transparent;
+
+    height: 100px;
+    width: 100px;
+    bottom: 100px;
+    position: absolute;
+    right: 82%;
+    z-index: 1;
+    top: 100px;
+    animation: subirbajar 5s linear infinite;
+
+
+    
+
+}
+#mario{
+   background-color: transparent;
+
+    height: 200px;
+    
+    bottom: 100px;
+    position: absolute;
+    left: 500px;
+    z-index: 1;
+    top: 630px;
+    
+
+    
+
+}
+#fuego{
+   background-color: transparent;
+    bottom: 1px;
+    height: 200px;
+    height: 100px;
+    bottom: 100px;
+    position: absolute;
+    left: 900px;
+    z-index: 1;
+    top: 650px;
+
+
+    animation:girar 5s  1,
+    trasladar 5s 2 linear;
+    
+
+}
+@keyframes girar {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+@keyframes subirbajar {
+    0%, 100% {
+        transform: translateY(0); 
+    }
+    50% {
+        transform: translateY(300px);
+    }
+}
+@keyframes creceryencojer {
+    0%, 100% {
+        transform: scale(0.5); 
+    }
+    50% {
+        transform: scale(1);
+    }
+}
+@keyframes trasladar {
+    0%, 100% {
+        transform: translateX(); 
+    }
+    50% {
+        transform: translateX(720px);
+    }
+}

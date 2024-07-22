@@ -1,0 +1,272 @@
+
+#mapa{
+    height: 100%;
+    width: 100%;
+    
+}
+#mapaa{
+    height: 100%;
+    width: 100%;
+    text-align: center;
+    z-index: 0;
+
+    position: absolute;
+    z-index: 1;
+}
+
+#play{ 
+    background-color: rgb(255, 1, 1);
+    font-family: designer;
+    color: rgb(255, 255, 255);
+    width: 200px;
+    height: 50px;
+    position: absolute;
+    cursor: pointer;
+    transition: tranform 0.2s;
+    border-radius: 30px;
+
+   
+    z-index: 3;
+}
+#butt{
+    height: 300px;
+    text-align: center;
+    z-index: 8;
+}
+    
+    
+.hover-button:hover {
+    transform: scale(1.2);
+    color: blue;
+}
+
+#mostro{
+   background-color: transparent;
+
+    height: 200px;
+    bottom: 200px;
+    position: absolute;
+    right: 135px;
+    z-index: 1;
+    top: 335px;
+    animation: trasladarm 5s infinite linear;
+    
+
+}
+#princesa{
+   background-color: transparent;
+
+    height: 200px;
+    
+    bottom: 100px;
+    position: absolute;
+    right: 35px;
+    z-index: 1;
+    top: 245px;
+    animation: subirbajar 5s infinite ;
+
+    
+
+}
+#cuadro{
+    background-color: transparent;
+
+    height: 100px;
+    width: 100px;
+    bottom: 100px;
+    position: absolute;
+    right: 40px;
+    z-index: 1;
+    top: 440px;
+}
+#tortuga{
+    background-color: transparent;
+
+    height: 100px;
+    bottom: 100px;
+    position: absolute;
+    right: 1140px;
+    z-index: 1;
+    top: 430px;
+    animation: trasladar 5s infinite linear;
+}
+  
+    
+
+
+#estrella{
+   background-color: transparent;
+
+    height: 100px;
+    width: 100px;
+    bottom: 100px;
+    position: absolute;
+    right: 900px;
+    z-index: 1;
+    top: 100px;
+    animation: subirbajar 5s linear infinite;
+    animation: creceryencojer 2s linear infinite;
+    left: 800px;
+    
+
+}
+#mone{
+   background-color: transparent;
+
+    height: 50px;
+    bottom: 100px;
+    position: absolute;
+    right: 900px;
+    z-index: 1;
+    top: 150px;
+    animation: girar 5s 20,
+    creceryencojer 2s 1;
+
+    left: 700px;
+    
+
+}
+#mario{
+   background-color: transparent;
+
+    height: 200px;
+    
+    bottom: 100px;
+    position: absolute;
+    left: 700px;
+    z-index: 1;
+    top: 340px;
+    animation: trasladarm 5s 20;
+}
+
+#mario2{
+   background-color: transparent;
+
+    height: 200px;
+    
+    bottom: 100px;
+    position: absolute;
+    left: 200px;
+    z-index: 1;
+    top: 150px;
+    animation: bajar 5s infinite linear;
+       
+
+}
+#tunel{
+   background-color: transparent;
+
+    height: 200px;
+    
+    bottom: 100px;
+    position: absolute;
+    left: 200px;
+    z-index: 1;
+    top: 400x;
+    
+
+    
+
+}
+#adobi{
+   background-color: transparent;
+
+    height: 250px;
+    
+    bottom: 100px;
+    position: absolute;
+    left: 600px;
+    z-index: 1;
+    top: 180px;
+    
+
+    
+
+}
+#mayy{
+   background-color: transparent;
+
+    height: 250px;
+   
+    bottom: 100px;
+    position: absolute;
+    left: 300px;
+    z-index: 1;
+    top: 200px;
+    animation: bajar 5s 20;
+    
+
+    
+
+}
+#fuego{
+   background-color: transparent;
+    bottom: 1px;
+    height: 200px;
+    height: 100px;
+    bottom: 100px;
+    position: absolute;
+    left: 900px;
+    z-index: 1;
+    top: 350px;
+
+    animation: girar 5s infinite,
+    trasladar 4s 10;
+    
+    
+
+}
+
+
+
+
+@keyframes girar {
+    0% {
+        transform: rotate(0.1deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+@keyframes subirbajar {
+    0%, 100% {
+        transform: translateY(-30px); 
+    }
+    50% {
+        transform: translateY(1px);
+    }
+}
+@keyframes bajar {
+    0%, 100% {
+        transform: translateY(0); 
+    }
+    50% {
+        transform: translateY(20px);
+    }
+}
+@keyframes creceryencojer {
+    0%, 100% {
+        transform: scale(0.5); 
+    }
+    50% {
+        transform: scale(1);
+    }
+}
+@keyframes trasladar {
+    0%, 100% {
+        transform: translateX(10px); 
+    }
+    50% {
+        transform: translateX(-600px);
+    
+    }
+}
+@keyframes trasladarm {
+    0%, 100% {
+        transform: translateX(10px); 
+    }
+    50% {
+        transform: translateX(-250px);
+    
+    }
+}
