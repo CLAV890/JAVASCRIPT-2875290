@@ -1,10 +1,14 @@
 
-#mapa{
+.mapa {
+    bottom: 10px;
     height: 100%;
     width: 100%;
+    right: 10px;
+    position: absolute;
+    border-radius: 10px;
     
 }
-#mapaa{
+.mapaa{
     height: 100%;
     width: 100%;
     text-align: center;
@@ -14,7 +18,7 @@
     z-index: 1;
 }
 
-#play{ 
+.play{ 
     background-color: rgb(255, 1, 1);
     font-family: designer;
     color: rgb(255, 255, 255);
@@ -28,7 +32,7 @@
    
     z-index: 3;
 }
-#butt{
+.butt{
     height: 300px;
     text-align: center;
     z-index: 8;
@@ -40,7 +44,7 @@
     color: blue;
 }
 
-#mostro{
+.mostro{
    background-color: transparent;
 
     height: 200px;
@@ -48,12 +52,12 @@
     position: absolute;
     right: 135px;
     z-index: 1;
-    top: 335px;
-    animation: trasladarm 5s infinite linear;
+    top: 600px;
+    /* animation: trasladarm 5s infinite linear; */
     
 
 }
-#princesa{
+.princesa{
    background-color: transparent;
 
     height: 200px;
@@ -62,13 +66,13 @@
     position: absolute;
     right: 35px;
     z-index: 1;
-    top: 245px;
-    animation: subirbajar 5s infinite ;
-
+    top: 470px;
+    /* animation: subirbajar 5s infinite ;
+ */
     
 
 }
-#cuadro{
+.cuadro{
     background-color: transparent;
 
     height: 100px;
@@ -77,24 +81,24 @@
     position: absolute;
     right: 40px;
     z-index: 1;
-    top: 440px;
+    top: 710px;
 }
-#tortuga{
+.tortuga{
     background-color: transparent;
 
     height: 100px;
     bottom: 100px;
     position: absolute;
-    right: 1140px;
+    right: 900px;
     z-index: 1;
-    top: 430px;
-    animation: trasladar 5s infinite linear;
+    top: 690px;
+   /*  animation: trasladar 5s infinite linear; */
 }
   
     
 
 
-#estrella{
+.estrella{
    background-color: transparent;
 
     height: 100px;
@@ -104,13 +108,13 @@
     right: 900px;
     z-index: 1;
     top: 100px;
-    animation: subirbajar 5s linear infinite;
-    animation: creceryencojer 2s linear infinite;
+    /* animation: subirbajar 5s linear infinite;
+    animation: creceryencojer 2s linear infinite; */
     left: 800px;
     
 
 }
-#mone{
+.mone{
    background-color: transparent;
 
     height: 50px;
@@ -119,14 +123,14 @@
     right: 900px;
     z-index: 1;
     top: 150px;
-    animation: girar 5s 20,
-    creceryencojer 2s 1;
+    /* animation: girar 5s 20,
+    creceryencojer 2s 1; */
 
     left: 700px;
     
 
 }
-#mario{
+.mario{
    background-color: transparent;
 
     height: 200px;
@@ -135,11 +139,11 @@
     position: absolute;
     left: 700px;
     z-index: 1;
-    top: 340px;
-    animation: trasladarm 5s 20;
+    top: 570px;
+    /* animation: trasladarm 5s infite lienar; */
 }
 
-#mario2{
+.mario2{
    background-color: transparent;
 
     height: 200px;
@@ -149,11 +153,11 @@
     left: 200px;
     z-index: 1;
     top: 150px;
-    animation: bajar 5s infinite linear;
+    /* animation: bajar 5s infinite linear; */
        
 
 }
-#tunel{
+.tunel{
    background-color: transparent;
 
     height: 200px;
@@ -168,7 +172,7 @@
     
 
 }
-#adobi{
+.adobi{
    background-color: transparent;
 
     height: 250px;
@@ -183,44 +187,40 @@
     
 
 }
-#mayy{
-   background-color: transparent;
-
-    height: 250px;
-   
-    bottom: 100px;
-    position: absolute;
-    left: 300px;
-    z-index: 1;
-    top: 200px;
-    animation: bajar 5s 20;
-    
-
-    
-
-}
-#fuego{
+.fuego{
    background-color: transparent;
     bottom: 1px;
     height: 200px;
     height: 100px;
     bottom: 100px;
     position: absolute;
-    left: 900px;
+    left: 1500px;
     z-index: 1;
-    top: 350px;
+    top: 620px;
 
-    animation: girar 5s infinite,
-    trasladar 4s 10;
+     animation: trasparente 5s ,
+    moverFuego 2s infinite,  
+     girar 0.2ms infinite;
+     
     
+      
     
 
+}
+
+@keyframes moverFuego{
+    0%{left:1500px;
+        
+    }
+    100%{left:500px;
+
+    }
 }
 
 
 
 
-@keyframes girar {
+@keyframes girar{
     0% {
         transform: rotate(0.1deg);
     }
@@ -229,18 +229,18 @@
     }
 }
 @keyframes subirbajar {
-    0%, 100% {
+    0% {
         transform: translateY(-30px); 
     }
-    50% {
+    100% {
         transform: translateY(1px);
     }
 }
 @keyframes bajar {
-    0%, 100% {
+    0% {
         transform: translateY(0); 
     }
-    50% {
+    100% {
         transform: translateY(20px);
     }
 }
@@ -253,10 +253,10 @@
     }
 }
 @keyframes trasladar {
-    0%, 100% {
+    0%{
         transform: translateX(10px); 
     }
-    50% {
+    100% {
         transform: translateX(-600px);
     
     }
@@ -266,7 +266,16 @@
         transform: translateX(10px); 
     }
     50% {
-        transform: translateX(-250px);
+        transform: translateX(-800px);
     
     }
 }
+@keyframes trasparente {
+    0% {
+      opacity: 0;
+    }
+   
+    100% {
+      opacity: 1;
+    }
+  }
